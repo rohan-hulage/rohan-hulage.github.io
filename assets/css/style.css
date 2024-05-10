@@ -697,18 +697,18 @@ section {
 --------------------------------------------------------------*/
 .projects {
   background-color: #f2f4fa;
-  
   font-family: "Poppins", sans-serif;
 }
 
 .projects .row {
   display: flex;
   justify-content: space-around;
+
 }
 
 .projects .icon-box {
   background-color: #fff;
-  
+  text-align: center;
   width: 40%;
   padding: 10px;
   margin: 20px;
@@ -722,26 +722,27 @@ section {
 }
 
 
-.projects .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.projects .title a {
+.projects a {
   color: #343a40;
-  font-size: xx-large;
   display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+  
 }
 
-.projects .title a:hover {
+.projects a h4{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.projects a:hover {
   color: #76ABAE;
 }
 
 .projects ul {
   list-style: none;
   line-height: 24px;
+  text-align: left;
 }
 
 
