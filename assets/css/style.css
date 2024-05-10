@@ -11,16 +11,16 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #222831;
 }
 
 a {
-  color: #149ddd;
+  color: #76ABAE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #76ABAE;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #76ABAE;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #76ABAE;
   color: #fff;
 }
 
@@ -122,7 +122,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #76ABAE;
   color: #fff;
   text-decoration: none;
 }
@@ -202,7 +202,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #76ABAE;
 }
 
 /* Mobile Navigation */
@@ -215,7 +215,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #76ABAE;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -241,7 +241,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: #31363F;
   background-size: cover;
 }
 
@@ -281,7 +281,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #76ABAE;
 }
 
 @media (min-width: 1024px) {
@@ -334,7 +334,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #76ABAE;
   bottom: 0;
   left: 0;
 }
@@ -370,7 +370,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #76ABAE;
   line-height: 0;
 }
 
@@ -393,7 +393,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #76ABAE;
   float: left;
   line-height: 0;
 }
@@ -430,40 +430,33 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+.skills {
+  background-color: #f2f4fa;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.skills h5{
+  font-size: 16px;
+  background: #d5e4f7;
+  padding: 15px 15px;
+  display: inline-block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+  grid-column: span 1;
+  text-align: center;
+  width: 80%;
+  border-radius: 4px;
+  box-shadow: 
+    0 4px 6px #76ABAE, /* top shadow */
+    0 4px 6px #76ABAE, /* side shadow */
+    0 4px 6px #76ABAE; /* bottom shadow */
 }
 
 /*--------------------------------------------------------------
@@ -480,7 +473,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #76ABAE;
   position: relative;
 }
 
@@ -559,7 +552,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #76ABAE;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -612,7 +605,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #76ABAE;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -649,11 +642,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #76ABAE;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #76ABAE;
 }
 
 .portfolio-details .portfolio-info {
@@ -694,59 +687,61 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Projjects
 --------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
+.projects {
+  background-color: #f2f4fa;
+  
+  font-family: "Poppins", sans-serif;
 }
 
-.services .icon {
-  float: left;
+.projects .row {
   display: flex;
+  justify-content: space-around;
+}
+
+.projects .icon-box {
+  background-color: #fff;
+  
+  width: 40%;
+  padding: 10px;
+  margin: 20px;
   align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
+  box-shadow: 
+    2px 2px 2px 2px #76ABAE, 
+    2px 2px 2px 2px #76ABAE,
+    2px 2px 2px 2px #76ABAE,
+    2px 2px 2px 2px #76ABAE,
+  
 }
 
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-}
 
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
+.projects .title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.projects .title a {
   color: #343a40;
+  font-size: xx-large;
+  align-content: center;
 }
 
-.services .title a:hover {
-  color: #149ddd;
+.projects .title a:hover {
+  color: #76ABAE;
 }
 
-.services .description {
-  margin-left: 80px;
+.projects ul {
+  list-style: none;
   line-height: 24px;
-  font-size: 14px;
 }
+
+.projects ul li {
+ 
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -833,7 +828,7 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #76ABAE;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -856,7 +851,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #76ABAE;
   float: left;
   width: 44px;
   height: 44px;
@@ -907,14 +902,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #76ABAE;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #76ABAE;
   color: #fff;
 }
 
@@ -1002,16 +997,17 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #dff3fc;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #76ABAE;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #76ABAE;
+  color: #fff;
 }
 
 @keyframes animate-loading {
