@@ -439,25 +439,31 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-gap: 20px;
 }
 
 .skills h5{
   font-size: 16px;
   background: #d5e4f7;
-  padding: 15px 15px;
-  display: inline-block;
+  padding: 15px;
   font-weight: 600;
-  grid-column: span 1;
   text-align: center;
-  width: 80%;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 
     0 4px 6px #76ABAE, /* top shadow */
     0 4px 6px #76ABAE, /* side shadow */
     0 4px 6px #76ABAE; /* bottom shadow */
 }
+
+@media screen and (max-width: 600px) {
+  .skills h5 {
+    width: 100%;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Resume
@@ -726,7 +732,7 @@ section {
 .projects .title a {
   color: #343a40;
   font-size: xx-large;
-  align-content: center;
+  display: inline-block;
 }
 
 .projects .title a:hover {
@@ -741,6 +747,13 @@ section {
 .projects ul li {
  
 }
+
+@media screen and (max-width: 768px) {
+  .projects .icon-box {
+    width: 80%;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
