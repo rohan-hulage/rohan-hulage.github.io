@@ -29,16 +29,7 @@ function App() {
           <Projects />
         </main>
 
-        <footer style={{
-          padding: '2rem 0',
-          marginTop: 'auto',
-          borderTop: '1px solid var(--border-color)',
-          textAlign: 'center',
-          fontSize: '0.9rem',
-          color: 'var(--text-tertiary)'
-        }}>
-          <p>&copy; {new Date().getFullYear()} Abhishek Hulage. Built with React, TypeScript & Vite.</p>
-        </footer>
+
       </div>
     </ThemeProvider>
   );
