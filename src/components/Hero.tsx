@@ -40,8 +40,10 @@ const Hero: React.FC = () => {
                     className="social-link"
                     aria-label={`Email to ${personal.email}`}
                     title={personal.email}
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                 >
-                    <FaEnvelope size={24} />
+                    <FaEnvelope size={20} />
+                    <span>{personal.email}</span>
                 </a>
                 <a
                     href={personal.linkedin}
@@ -50,8 +52,10 @@ const Hero: React.FC = () => {
                     className="social-link"
                     aria-label="LinkedIn Profile"
                     title="LinkedIn"
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                 >
-                    <FaLinkedin size={24} />
+                    <FaLinkedin size={20} />
+                    <span>LinkedIn</span>
                 </a>
                 <a
                     href={personal.github}
@@ -60,8 +64,10 @@ const Hero: React.FC = () => {
                     className="social-link"
                     aria-label="GitHub Profile"
                     title="GitHub"
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                 >
-                    <FaGithub size={24} />
+                    <FaGithub size={20} />
+                    <span>GitHub</span>
                 </a>
             </div>
         </section>
