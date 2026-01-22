@@ -37,49 +37,31 @@ const Hero: React.FC = () => {
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                 <a
                     href={`mailto:${personal.email}`}
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        color: 'var(--text-primary)',
-                        textDecoration: 'none',
-                        fontSize: '1.1rem'
-                    }}
+                    className="social-link"
+                    aria-label={`Email to ${personal.email}`}
+                    title={personal.email}
                 >
-                    <FaEnvelope size={20} />
-                    <span>{personal.email}</span>
+                    <FaEnvelope size={24} />
                 </a>
                 <a
                     href={personal.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        color: '#0077b5', // LinkedIn brand color
-                        textDecoration: 'none',
-                        fontSize: '1.1rem'
-                    }}
+                    className="social-link"
+                    aria-label="LinkedIn Profile"
+                    title="LinkedIn"
                 >
-                    <FaLinkedin size={20} />
-                    <span>LinkedIn</span>
+                    <FaLinkedin size={24} />
                 </a>
                 <a
                     href={personal.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.5rem',
-                        color: 'var(--text-primary)',
-                        textDecoration: 'none',
-                        fontSize: '1.1rem'
-                    }}
+                    className="social-link"
+                    aria-label="GitHub Profile"
+                    title="GitHub"
                 >
-                    <FaGithub size={20} />
-                    <span>GitHub</span>
+                    <FaGithub size={24} />
                 </a>
             </div>
         </section>
