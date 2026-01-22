@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { portfolioData } from '../data/content';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
     const { personal } = portfolioData;
@@ -34,14 +35,51 @@ const Hero: React.FC = () => {
             </p>
 
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                <a href={`mailto:${personal.email}`} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    📧 {personal.email}
+                <a
+                    href={`mailto:${personal.email}`}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        color: 'var(--text-primary)',
+                        textDecoration: 'none',
+                        fontSize: '1.1rem'
+                    }}
+                >
+                    <FaEnvelope size={20} />
+                    <span>{personal.email}</span>
                 </a>
-                <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    🔗 LinkedIn
+                <a
+                    href={personal.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        color: '#0077b5', // LinkedIn brand color
+                        textDecoration: 'none',
+                        fontSize: '1.1rem'
+                    }}
+                >
+                    <FaLinkedin size={20} />
+                    <span>LinkedIn</span>
                 </a>
-                <a href={personal.github} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    💻 GitHub
+                <a
+                    href={personal.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        color: 'var(--text-primary)',
+                        textDecoration: 'none',
+                        fontSize: '1.1rem'
+                    }}
+                >
+                    <FaGithub size={20} />
+                    <span>GitHub</span>
                 </a>
             </div>
         </section>
