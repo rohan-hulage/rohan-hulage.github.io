@@ -12,13 +12,13 @@ const FloatingNav: React.FC = () => {
     return (
         <div style={{
             position: 'fixed',
-            bottom: '2rem',
+            top: '2rem', // Moved to top
             left: '50%',
             transform: 'translateX(-50%)',
             display: 'flex',
             alignItems: 'center',
-            gap: '1rem',
-            padding: '1rem 1.5rem',
+            gap: '2rem', // Increased gap
+            padding: '1rem 3rem', // Increased padding
             borderRadius: '2rem',
             backgroundColor: 'rgba(255, 255, 255, 0.1)', // Glassmorphism base
             backdropFilter: 'blur(15px)',
@@ -110,7 +110,8 @@ const FloatingNav: React.FC = () => {
                     }
                     .floating-nav {
                         padding: 0.8rem 1rem;
-                        bottom: 1.5rem;
+                        top: 1.5rem; // Moved to top for mobile too
+                        bottom: auto; // Reset bottom
                         gap: 0.8rem;
                     }
                 }

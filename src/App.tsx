@@ -1,7 +1,7 @@
 
 
 import { ThemeProvider } from './context/ThemeContext';
-import Header from './components/Header';
+
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Education from './components/Education';
@@ -19,7 +19,7 @@ function App() {
         display: 'flex',
         flexDirection: 'column'
       }}>
-        <Header />
+
 
         <main style={{ flex: 1, paddingBottom: '4rem' }}>
           <Hero />
