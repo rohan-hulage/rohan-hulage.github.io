@@ -1,0 +1,22 @@
+.app-container {
+    max-width: 1000px;
+    margin: 140px auto 2rem;
+    padding: 3rem;
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    border-radius: 3rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+    transition: background-color var(--transition-speed);
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        margin: 100px 1rem 1rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+}
