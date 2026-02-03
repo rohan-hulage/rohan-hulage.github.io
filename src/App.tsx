@@ -7,7 +7,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-
+import FloatingNav from './components/FloatingNav';
 function App() {
   return (
     <ThemeProvider>
@@ -28,6 +28,7 @@ function App() {
           <Skills />
           <Projects />
         </main>
+        <FloatingNav />
 
 
       </div>
