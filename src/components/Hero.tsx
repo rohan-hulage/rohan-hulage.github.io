@@ -6,22 +6,28 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Hero: React.FC = () => {
     const { personal } = portfolioData;
     return (
-        <section style={{ padding: '2rem 0 4rem 0' }}>
+        <section>
             <p style={{
                 fontSize: '1.2rem',
                 color: 'var(--accent-color)',
-                marginBottom: '0.5rem',
-                fontWeight: 600
+                marginBottom: '0.8rem',
+                fontWeight: 600,
+                letterSpacing: '0.05em'
             }}>Hi, I am</p>
             <h1 style={{
-                fontSize: '3.5rem',
+                fontSize: '4rem',
                 marginBottom: '1rem',
-                color: 'var(--text-primary)'
+                color: 'var(--text-primary)',
+                lineHeight: 1.1,
+                background: 'linear-gradient(45deg, var(--text-primary) 30%, var(--accent-color) 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
             }}>{personal.name}</h1>
             <h2 style={{
-                fontSize: '1.8rem',
+                fontSize: '2rem',
                 color: 'var(--text-secondary)',
-                marginBottom: '2rem',
+                marginBottom: '2.5rem',
                 fontWeight: 400
             }}>{personal.title}</h2>
 
