@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBriefcase, FaCode, FaTools, FaFileDownload } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
+import resumePdf from '../assets/Abhishek_Resume.pdf';
 
 const FloatingNav: React.FC = () => {
     const navItems = [
@@ -66,8 +67,8 @@ const FloatingNav: React.FC = () => {
             />
 
             <a
-                href="/resume.pdf" // Direct link assuming file is in public folder or handled by vite
-                download="Rohan_Hulage_Resume.pdf"
+                href={resumePdf}
+                download="Abhishek_Hulage_Resume.pdf"
                 style={{
                     display: 'flex',
                     flexDirection: 'column',
