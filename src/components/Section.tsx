@@ -1,35 +1,27 @@
-
 import React from 'react';
 
 interface SectionProps {
-    id: string;
+    id?: string;
     title: string;
     children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ id, title, children }) => {
+const Section: React.FC<SectionProps> = ({ title, children }) => {
     return (
-        <section id={id} style={{ padding: '3rem 0', borderBottom: '1px solid var(--border-color)' }}>
-            <h2 style={{
-                fontSize: '1.8rem',
-                marginBottom: '2rem',
-                color: 'var(--text-primary)',
-                position: 'relative',
-                display: 'inline-block'
-            }}>
+        <div style={{ width: '100%' }}>
+            <h2 className="section-title text-gradient">
                 {title}
-                <span style={{
-                    position: 'absolute',
-                    bottom: '-5px',
-                    left: 0,
-                    width: '40%',
-                    height: '3px',
-                    background: 'var(--accent-color)',
-                    borderRadius: '2px'
-                }}></span>
+                <div style={{
+                    width: '60px',
+                    height: '4px',
+                    background: 'var(--text-primary)',
+                    borderRadius: '2px',
+                    margin: '0.5rem auto 0',
+                    opacity: 0.8
+                }}></div>
             </h2>
             {children}
-        </section>
+        </div>
     );
 };
 

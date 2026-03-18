@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -8,18 +7,14 @@ const ThemeToggle: React.FC = () => {
     return (
         <button
             onClick={toggleTheme}
+            className="social-link"
             style={{
-                background: 'transparent',
-                border: '1px solid var(--border-color)',
-                borderRadius: '50%',
-                width: '40px',
-                height: '40px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--text-primary)',
-                fontSize: '1.2rem',
-                transition: 'all 0.3s ease'
+                width: '36px',
+                height: '36px',
+                padding: 0,
+                fontSize: '1rem',
+                border: 'none',
+                background: 'transparent'
             }}
             aria-label="Toggle Theme"
         >

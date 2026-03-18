@@ -9,7 +9,7 @@ interface SectionWrapperProps {
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, id, className = '', delay = 0 }) => {
     const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef<HTMLDivElement>(null);
+    const sectionRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -40,17 +40,14 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, id, className
         <section
             id={id}
             ref={sectionRef}
-            className={`section-wrapper ${className}`}
-            style={{
-                maxWidth: '1000px',
-                margin: '0 auto',
-                padding: '4rem 1.5rem',
-                opacity: isVisible ? 1 : 0,
-                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-                transition: `all 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-            }}
+            className={`section-padding ${className}`}
         >
-            {children}
+            <div 
+                className={`container ${isVisible ? 'animate-fade-up' : ''}`}
+                style={{ opacity: isVisible ? undefined : 0, animationDelay: `${delay}ms` }}
+            >
+                {children}
+            </div>
         </section>
     );
 };

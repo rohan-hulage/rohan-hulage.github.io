@@ -68,12 +68,14 @@ export const portfolioData = {
         {
             title: "Bank Account Management System",
             description: "Designed and developed a full-stack banking application with Spring Boot (backend) and React with TypeScript (frontend). Implemented features like account creation, balance inquiry, fund transfers, credit/debit transactions, and transaction history retrieval. Built RESTful APIs with proper exception handling and integrated MySQL for data persistence following microservices principles. Created a responsive front-end UI using React, HTML, and CSS for seamless user interaction.",
-            tech: ["Spring Boot", "Spring REST API", "Java", "MySQL", "Hibernate/JPA", "Microservices", "Maven", "React", "TypeScript", "HTML", "CSS", "Postman", "GitHub", "OOP"]
+            tech: ["Spring Boot", "Spring REST API", "Java", "MySQL", "Hibernate/JPA", "Microservices", "Maven", "React", "TypeScript", "HTML", "CSS", "Postman", "GitHub", "OOP"],
+            link: ""
         },
         {
             title: "Marathi Biodata Generator",
             description: "Developed a responsive Biodata Generator web application using React and TypeScript, featuring real-time document preview and phonetic typing support for multiple languages. Implemented client-side PDF export functionality using html2canvas and jsPDF, ensuring high-quality, printable output directly from the browser.",
-            tech: ["React.js", "TypeScript", "Vite", "jsPDF", "html2canvas", "CSS", "Responsive Web Design"]
+            tech: ["React.js", "TypeScript", "Vite", "jsPDF", "html2canvas", "CSS", "Responsive Web Design"],
+            link: "https://marathi-biodata.vercel.app/"
         }
     ]
 };

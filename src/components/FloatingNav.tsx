@@ -13,23 +13,17 @@ const FloatingNav: React.FC = () => {
     return (
         <div style={{
             position: 'fixed',
-            top: '2rem', // Moved to top
+            top: '1.5rem',
             left: '50%',
             transform: 'translateX(-50%)',
             display: 'flex',
             alignItems: 'center',
-            gap: '2rem', // Increased gap
-            padding: '1rem 3rem', // Increased padding
+            gap: '1.5rem',
+            padding: '0.75rem 2rem',
             borderRadius: '2rem',
-            backgroundColor: 'rgba(255, 255, 255, 0.1)', // Glassmorphism base
-            backdropFilter: 'blur(15px)',
-            WebkitBackdropFilter: 'blur(15px)',
-            boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-            border: '1px solid rgba(255, 255, 255, 0.18)',
             zIndex: 1000,
-            transition: 'all 0.3s ease',
         }}
-            className="floating-nav"
+            className="glass-panel floating-nav"
         >
             {navItems.map((item) => (
                 <a
@@ -49,21 +43,21 @@ const FloatingNav: React.FC = () => {
                     }}
                     className="nav-item"
                     onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = 'scale(1.2) translateY(-5px)';
-                        e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                        e.currentTarget.style.transform = 'scale(1.1) translateY(-3px)';
+                        e.currentTarget.style.color = 'var(--accent-hover)';
                     }}
                     onMouseLeave={(e) => {
                         e.currentTarget.style.transform = 'scale(1) translateY(0)';
-                        e.currentTarget.style.backgroundColor = 'transparent';
+                        e.currentTarget.style.color = 'var(--text-primary)';
                     }}
                 >
-                    <span style={{ fontSize: '1.4rem', marginBottom: '0.2rem' }}>{item.icon}</span>
-                    <span className="nav-label" style={{ fontSize: '0.7rem', opacity: 0.8 }}>{item.label}</span>
+                    <span style={{ fontSize: '1.25rem', marginBottom: '0.2rem' }}>{item.icon}</span>
+                    <span className="nav-label" style={{ fontSize: '0.7rem', opacity: 0.8, fontWeight: 500 }}>{item.label}</span>
                 </a>
             ))}
 
             <div
-                style={{ width: '1px', height: '24px', backgroundColor: 'var(--border-color)', margin: '0 0.5rem' }}
+                style={{ width: '1px', height: '24px', backgroundColor: 'var(--border-color)', margin: '0 0.2rem' }}
             />
 
             <a
@@ -84,16 +78,16 @@ const FloatingNav: React.FC = () => {
                 }}
                 className="nav-item"
                 onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'scale(1.2) translateY(-5px)';
-                    e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                    e.currentTarget.style.transform = 'scale(1.1) translateY(-3px)';
+                    e.currentTarget.style.color = 'var(--accent-hover)';
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'scale(1) translateY(0)';
-                    e.currentTarget.style.backgroundColor = 'transparent';
+                    e.currentTarget.style.color = 'var(--text-primary)';
                 }}
             >
-                <span style={{ fontSize: '1.4rem', marginBottom: '0.2rem' }}><FaFileDownload /></span>
-                <span className="nav-label" style={{ fontSize: '0.7rem', opacity: 0.8 }}>Resume</span>
+                <span style={{ fontSize: '1.25rem', marginBottom: '0.2rem' }}><FaFileDownload /></span>
+                <span className="nav-label" style={{ fontSize: '0.7rem', opacity: 0.8, fontWeight: 500 }}>Resume</span>
             </a>
 
             <div style={{ marginLeft: '0.5rem' }}>
@@ -101,19 +95,13 @@ const FloatingNav: React.FC = () => {
             </div>
 
             <style>{`
-                .floating-nav:hover {
-                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
-                }
-                
                 @media (max-width: 600px) {
                     .nav-label {
                         display: none;
                     }
                     .floating-nav {
-                        padding: 0.8rem 1rem;
-                        top: 1.5rem; // Moved to top for mobile too
-                        bottom: auto; // Reset bottom
-                        gap: 0.8rem;
+                        padding: 0.6rem 1rem !important;
+                        gap: 1rem !important;
                     }
                 }
             `}</style>
