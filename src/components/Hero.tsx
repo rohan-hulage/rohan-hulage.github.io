@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Hero: React.FC = () => {
     const { personal } = portfolioData;
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '80vh', paddingTop: '2rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', justifyContent: 'center', minHeight: '80vh', paddingTop: '2rem' }}>
             <p style={{
                 fontSize: '1.25rem',
                 color: 'var(--text-secondary)',
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 {personal.summary}
             </p>
 
-            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
                 <a
                     href={`mailto:${personal.email}`}
                     className="social-link glass-panel"
