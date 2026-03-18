@@ -2,7 +2,7 @@
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 max(5vw, 2rem);
   width: 100%;
 }
 
