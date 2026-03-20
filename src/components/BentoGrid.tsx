@@ -69,7 +69,7 @@ const BentoGrid: React.FC = () => {
           <GithubCard />
         </motion.div>
 
-        <motion.div variants={itemVariants} style={{ gridColumn: 'span 2', gridRow: 'span 1' }}>
+        <motion.div variants={itemVariants} style={{ gridColumn: 'span 2', gridRow: 'span 2' }}>
           <ExperienceCard />
         </motion.div>
 
