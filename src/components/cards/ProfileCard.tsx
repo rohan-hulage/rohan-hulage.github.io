@@ -2,6 +2,8 @@ import React from 'react';
 import GlassCard from '../GlassCard';
 import { portfolioData } from '../../data/content';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+// @ts-ignore
+import DeveloperResume from '../../assets/Abhishek_Resume.pdf';
 
 const ProfileCard: React.FC = () => {
   const { personal } = portfolioData;
@@ -47,7 +49,7 @@ const ProfileCard: React.FC = () => {
         </div>
         
         <a 
-          href="/resume.pdf" 
+          href={DeveloperResume} 
           download="Abhishek_Hulage_Resume.pdf"
           style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1rem', background: 'var(--text-accent)', color: 'var(--bg-dark)', borderRadius: '2rem', fontSize: '0.85rem', fontWeight: 600, transition: 'var(--transition-smooth)', textDecoration: 'none' }}
           onMouseOver={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 5px 15px rgba(0, 255, 204, 0.3)'; }}
