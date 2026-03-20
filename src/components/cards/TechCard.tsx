@@ -3,7 +3,11 @@ import GlassCard from '../GlassCard';
 import { portfolioData } from '../../data/content';
 
 const TechCard: React.FC = () => {
-  const allSkills = [...portfolioData.skills.technical, ...portfolioData.skills.concepts].slice(0, 15);
+  const allSkills = [
+    ...portfolioData.skills.backend, 
+    ...portfolioData.skills.cloudAi, 
+    ...portfolioData.skills.tools
+  ].slice(0, 15);
 
   return (
     <GlassCard style={{ display: 'flex', flexDirection: 'column' }}>
@@ -28,7 +32,7 @@ const TechCard: React.FC = () => {
             {skill}
           </div>
         ))}
-        {([...portfolioData.skills.technical, ...portfolioData.skills.concepts].length > 15) && (
+        {([...portfolioData.skills.backend, ...portfolioData.skills.cloudAi, ...portfolioData.skills.tools].length > 15) && (
           <div style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
             + more
           </div>

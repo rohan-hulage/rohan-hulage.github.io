@@ -1,4 +1,3 @@
-
 export const portfolioData = {
     personal: {
         name: "Abhishek Hulage",
@@ -6,9 +5,9 @@ export const portfolioData = {
         location: "Pune, Maharashtra",
         email: "hulageabhishek@gmail.com",
         phone: "+91-7558312273",
-        linkedin: "https://linkedin.com/in/abhishek-hulage", // Placeholder if not known
-        github: "https://github.com/rohan-hulage", // Inferred from dir
-        summary: "Software Engineer eager to solve real-world problems. Passionate about building efficient, maintainable, and user-centric applications with a focus on testing and automating manual tasks to improve efficiency."
+        linkedin: "https://linkedin.com/in/abhishek-hulage",
+        github: "https://github.com/rohan-hulage",
+        summary: "Software Engineer with experience in building enterprise applications. Skilled in Java, Spring Boot, REST API development, and microservices architecture, along with experience in AI-driven automation using Copilot Agents and Amazon Q Business. Passionate about building scalable backend systems and leveraging AI to automate business workflows and improve productivity."
     },
     experience: [
         {
@@ -16,18 +15,10 @@ export const portfolioData = {
             company: "Jet2 Travel Technologies Pvt Ltd.",
             period: "July 2024 - Present",
             description: [
-                "Developed business applications using Power Apps.",
-                "Experienced in automating complex business workflows using Power Automate, enhancing operational efficiency and reducing manual efforts.",
-                "Experience in designing databases using SharePoint as a backend.",
-                "Involved throughout the project lifecycle, from requirement gathering and stakeholder discussions to solution design, development, deployment, and post-implementation support."
-            ]
-        },
-        {
-            role: "Associate Software Engineer Intern",
-            company: "Akrity Computing",
-            period: "March 2024 - May 2024",
-            description: [
-                "Delivered full-cycle software development and deployment for enterprise-grade applications using Ruby, Ruby on Rails, Javascript, HTML and CSS."
+                "Developed enterprise business applications using Power Apps to support internal operations and streamline business processes.",
+                "Automated complex workflows using Power Automate, significantly reducing manual tasks and improving operational efficiency.",
+                "Built and experimented with Copilot agents, Amazon Q Business and AI-driven assistants to enable enterprise knowledge search and to automate knowledge retrieval.",
+                "Participated in the complete software development lifecycle (SDLC) including requirement gathering, solution design, development, testing, deployment, and post-implementation support."
             ]
         },
         {
@@ -35,7 +26,8 @@ export const portfolioData = {
             company: "Persistent Systems",
             period: "January 2023 - May 2023",
             description: [
-                "Delivered end-to-end software development and deployment support for enterprise-grade applications, applying best practices in SDLC, testing with JUnit, and version control using Git, while strengthening skills in Java and Spring Boot frameworks."
+                "Contributed to backend development using Java and Spring Boot, implementing REST APIs for enterprise applications.",
+                "Strengthened backend development practices using JUnit for testing and Git for version control. Collaborated with development teams in an Agile environment, following standard SDLC practices."
             ]
         }
     ],
@@ -54,14 +46,17 @@ export const portfolioData = {
         }
     ],
     skills: {
-        technical: [
-            "Java", "JavaScript", "TypeScript", "React.js", "Node.js", "Spring Boot",
-            "MySQL", "Hibernate/JPA", "AWS", "Amazon Q Business", "Copilot Agents",
-            "Low Code", "Power Automate", "Power Apps", "SharePoint", "Git", "Github"
+        backend: [
+            "Java", "Spring Boot", "Spring MVC", "Hibernate/JPA", "REST APIs", "Microservices", 
+            "OOP", "MySQL", "React", "TypeScript", "HTML", "CSS"
         ],
-        concepts: [
-            "Microservices", "Object Oriented Programming (OOP)", "CRM", "REST APIs",
-            "Microsoft Dynamics 365", "SDLC", "Data Structures and Algorithms"
+        cloudAi: [
+            "AWS", "Copilot Agents", "Amazon Q Business", "Power Apps", "Power Automate", 
+            "SharePoint", "Microsoft Dynamics 365"
+        ],
+        tools: [
+            "Git", "GitHub", "Maven", "Gradle", "CI/CD", "Azure DevOps", "JSON", "Kafka", 
+            "SDLC", "API Integration"
         ]
     },
     projects: [

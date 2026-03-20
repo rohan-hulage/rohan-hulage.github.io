@@ -2,7 +2,6 @@ import React from 'react';
 import GlassCard from '../GlassCard';
 import { portfolioData } from '../../data/content';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
-// @ts-ignore
 import DeveloperResume from '../../assets/Abhishek_Resume.pdf';
 
 const ProfileCard: React.FC = () => {
