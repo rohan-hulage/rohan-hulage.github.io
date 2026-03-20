@@ -1,33 +1,48 @@
+import React from 'react';
+import BentoGrid from './components/BentoGrid';
 
-
-import { ThemeProvider } from './context/ThemeContext';
-
-
-import Hero from './components/Hero';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import FloatingNav from './components/FloatingNav';
-import SectionWrapper from './components/SectionWrapper';
 function App() {
   return (
-    <ThemeProvider>
-      <div style={{ paddingTop: '100px' }}>
-
-
-        <main style={{ flex: 1, paddingBottom: '4rem' }}>
-          <SectionWrapper id="hero" delay={100}><Hero /></SectionWrapper>
-          <SectionWrapper id="experience" delay={200}><Experience /></SectionWrapper>
-          <SectionWrapper id="education" delay={200}><Education /></SectionWrapper>
-          <SectionWrapper id="skills" delay={200}><Skills /></SectionWrapper>
-          <SectionWrapper id="projects" delay={200}><Projects /></SectionWrapper>
-        </main>
-        <FloatingNav />
-
-
+    <>
+      {/* Background ambient light effects */}
+      <div 
+        style={{
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          width: '100vw',
+          height: '100vh',
+          zIndex: -1,
+          overflow: 'hidden',
+          pointerEvents: 'none'
+        }}
+      >
+        <div style={{
+          position: 'absolute',
+          top: '-20%',
+          left: '-10%',
+          width: '50vw',
+          height: '50vw',
+          background: 'radial-gradient(circle, rgba(120,0,255,0.15) 0%, transparent 70%)',
+          filter: 'blur(80px)',
+          borderRadius: '50%'
+        }} />
+        <div style={{
+          position: 'absolute',
+          bottom: '-10%',
+          right: '-10%',
+          width: '60vw',
+          height: '60vw',
+          background: 'radial-gradient(circle, rgba(0,255,204,0.1) 0%, transparent 70%)',
+          filter: 'blur(100px)',
+          borderRadius: '50%'
+        }} />
       </div>
-    </ThemeProvider>
+
+      <main>
+        <BentoGrid />
+      </main>
+    </>
   );
 }
 
